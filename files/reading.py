@@ -107,7 +107,7 @@ def use_read(filepath):
     # Another way is to first remove the very last \n.
     #content = f.read().rstrip()
     # And then outside the with statement, we can
-    #return content.split("\n")
+    #return filter(None, content.split("\n"))
     #
     # Finally, if we expect to see the last element
     # being the *ONLY* an empty string, just slice.
